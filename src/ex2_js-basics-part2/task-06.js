@@ -16,15 +16,11 @@ function defineIsPrime(num) {
     }
   }
 
-  let result = '';
-
   if (isPrime) {
-    result = `Число ${num} - простое число`;
-  } else {
-    result = `Число ${num} - составное число`;
+    return `Число ${num} - простое число`;
   }
 
-  return result;
+  return `Число ${num} - составное число`;
 }
 
 module.exports = defineIsPrime;

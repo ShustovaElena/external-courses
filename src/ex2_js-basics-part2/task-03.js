@@ -14,6 +14,7 @@ function countEvenAndOddNum(arr) {
       }
     }
   }
+  console.log(`[${evenCount}, ${oddCount}, ${zeroCount}]`);
 
   return [evenCount, oddCount, zeroCount];
 }
