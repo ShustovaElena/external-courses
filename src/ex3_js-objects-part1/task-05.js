@@ -1,5 +1,5 @@
-function cloneObj(obj) {
+function getCopyObj(obj) {
     return Object.assign({}, obj);
 }
 
-module.exports = cloneObj;
+module.exports = getCopyObj;

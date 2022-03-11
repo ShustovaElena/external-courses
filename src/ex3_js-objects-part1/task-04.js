@@ -1,11 +1,11 @@
 function setKeyInObj(str, obj) {
-    const newKey = str;
-    const obj1 = obj;
+    const newObj = Object.assign({}, obj);
 
     if (!obj.hasOwnProperty(str)) {
-        obj1[newKey] = 'new';
+        newObj[str] = 'new';
     }
-    return obj;
+
+    return newObj;
 }
 
 module.exports = setKeyInObj;
