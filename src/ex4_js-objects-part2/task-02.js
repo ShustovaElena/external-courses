@@ -1,5 +1,5 @@
-function getObjWithoutPrototype() {
+function getEmptyObject() {
     return Object.create(null);
 }
 
-module.exports = getObjWithoutPrototype;
+module.exports = getEmptyObject;

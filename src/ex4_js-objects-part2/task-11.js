@@ -15,6 +15,8 @@ function countSymbols(str) {
             console.log(key, countSymbol[key]);
         }
     }
+
+    return undefined;
 }
 
 module.exports = countSymbols;
