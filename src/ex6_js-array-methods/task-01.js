@@ -4,15 +4,15 @@ function sliceAnalog(array, begin, end) {
     let to = end || array.length;
 
     if (from < 0) {
-        from = array.length + from;
+        if (array.length < Math.abs(from)) {
+            from = 0;
+        } else {
+            from = array.length + from;
+        }
     }
 
     if (to < 0) {
         to = array.length + to;
-    }
-
-    if (from < 0) {
-        from = 0;
     }
 
     if (to > array.length) {
