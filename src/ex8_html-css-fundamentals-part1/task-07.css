@@ -1,0 +1,63 @@
+.first,
+.first-one,
+.first-two {
+    width: 500px;
+    height: 250px;
+    background-color: rgb(34, 160, 34);
+}
+
+.first-one,
+.first-two {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    background-color: rgba(34, 160, 34, 0.5);
+}
+
+.first-two {
+    position: absolute;
+    top: 17px;
+    left: 17px;
+    background-color: rgba(34, 160, 34, 0.3);
+}
+
+.second {
+    margin-top: 30px;
+    width: 500px;
+    height: 250px;
+    background-color: rgb(160, 34, 34);
+    box-shadow: 5px 5px 1px rgba(255, 0, 0, 0.5);
+}
+
+.second-one {
+    width: 500px;
+    height: 250px;
+    box-shadow: 10px 10px 1px rgba(221, 84, 84, 0.5);
+}
+
+.third {
+    position: relative;
+    margin-top: 30px;
+    width: 500px;
+    height: 250px;
+    background-color: rgba(61, 34, 160, 1);
+}
+
+.third::before,
+.third::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    background-color: rgba(61, 34, 160, 0.5);
+}
+
+.third::before {
+    top: 5px;
+    left: 5px;
+}
+
+.third::after {
+    top: 10px;
+    left: 10px;
+}
