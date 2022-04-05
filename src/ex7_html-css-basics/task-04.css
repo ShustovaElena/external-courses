@@ -1,0 +1,31 @@
+@font-face {
+    font-family: Forum;
+    src: url("Forum/Forum-Regular.ttf");
+}
+
+.description {
+    background-color: rgb(0, 0, 255);
+}
+
+img {
+    width: 10%;
+}
+
+h2 {
+    font-family: Forum;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: blueviolet;
+    padding-top: 10px;
+    border-top: 1px solid #000000;
+}
+
+.border-none {
+    border: none;
+}
+
+ol {
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+}
