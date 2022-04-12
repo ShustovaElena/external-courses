@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shape</title>
+    <style>
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+      }
+      .round {
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="round" src="./assets/images/4.jpg" alt="Picture" />
+
+    <img
+      style="
+        clip-path: polygon(
+          0% 20%,
+          60% 20%,
+          60% 0%,
+          100% 50%,
+          60% 100%,
+          60% 80%,
+          0% 80%
+        );
+      "
+      src="https://wallbox.ru/resize/640x480/wallpapers/main/201140/roskosh-b4295697a977.jpg"
+      alt="Picture"
+    />
+  </body>
+</html>
