@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    background-color: #000000;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: block;
+    margin: 50px auto;
+    width: 80%;
+    height: 564px;
+    position: relative;
+    background-image: url("assets/img/background-welcome.jpg");
+    background-size: 1000px 750px;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    transition: background 0.3s ease-in;
+}
+
+/*Slider*/
+
+.slider {
+    position: absolute;
+    left: 250px;
+    top: 510px;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 600px;
+    height: 60px;
+    background-color: #000000;
+}
+
+.slider div {
+    margin-left: 20px;
+}
+
+.slider label input[type=radio] {
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    padding: 0.5em;
+    margin: 10px;
+    -webkit-appearance: none;
+}
+
+.slider label input[type=radio]:checked {
+    background-color: #9d8665;
+    background-size: 9px 9px;
+}
+
+.slider label input[type=radio]:focus {
+    outline-color: transparent;
+}
+
+.slider label input[type=radio]:hover {
+    background-color: #9d8665;
+}
+
+.slider button {
+    padding: -2px 5px;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.arrows button img:hover {
+    filter: invert(60%) sepia(5%) saturate(2625%) hue-rotate(356deg) brightness(89%) contrast(78%);
+}
+
+.counter span {
+    font-size: 1.5em;
+    color: #FFFFFF;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Photo Slider</title>
+  </head>
+  <body>
+    <div class="wrapper container">
+      <div class="slider">
+        <div class="counter">
+          <span class="change-span">01</span>
+          <span>|</span>
+          <span>05</span>
+        </div>
+
+        <div class="switcher">
+          <label>
+            <input
+              id="0"
+              class="square-slider"
+              type="radio"
+              name="radio"
+              checked
+            />
+          </label>
+
+          <label>
+            <input id="1" class="square-slider" type="radio" name="radio" />
+          </label>
+
+          <label>
+            <input id="2" class="square-slider" type="radio" name="radio" />
+          </label>
+
+          <label>
+            <input id="3" class="square-slider" type="radio" name="radio" />
+          </label>
+
+          <label>
+            <input id="4" class="square-slider" type="radio" name="radio" />
+          </label>
+        </div>
+
+        <div class="arrows">
+          <button class="left-arrow-slider">
+            <img src="assets/svg/leftarrow.svg" alt="" />
+          </button>
+          <button class="right-arrow-slider">
+            <img src="assets/svg/rightarrow.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
