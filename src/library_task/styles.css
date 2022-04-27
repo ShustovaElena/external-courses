@@ -1,6 +1,7 @@
 :root {
     --header: #2e364a;
     --link: #70778f;
+    --dot: #1b2029;
     --bg-profile: #15a5fa;
 }
 
@@ -34,6 +35,13 @@ nav {
     gap: 20px;
 }
 
+.dot {
+    margin-top: 23px;
+    width: 5px;
+    height: 5px;
+    background-color: var(--dot);
+}
+
 .link {
     margin-top: 15px;
     text-decoration: none;
@@ -51,6 +59,7 @@ nav {
     background-color: var(--bg-profile);
     color: #ffffff;
     font-family: Proxima;
+    cursor: pointer;
 }
 
 .user-photo {
@@ -68,7 +77,6 @@ nav {
     padding: 0;
     border: none;
     background: url(assets/img/arrow-down.png) 100% 100%/ 100% 100% no-repeat;
-    cursor: pointer;
 }
 
 main {
