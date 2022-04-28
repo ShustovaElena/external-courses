@@ -3,13 +3,16 @@
 const wrapper = document.querySelector('.wrapper');
 const leftArrowSlider = document.querySelector('.left-arrow-slider');
 const rightArrowSlider = document.querySelector('.right-arrow-slider');
-const dotsArray = document.querySelectorAll('.switcher > label > input');
 const span = document.querySelector('.change-span');
 const switcher = document.querySelector('.switcher');
 
 // FUNCTION
 
-const arraySlider = ['assets/img/welcome-slider-1.jpg', 'assets/img/welcome-slider-2.jpg', 'assets/img/welcome-slider-3.jpg', 'assets/img/welcome-slider-4.jpg', 'assets/img/welcome-slider-5.jpg'];
+const arraySlider = ['https://random.imagecdn.app/500/150',
+    'https://random.imagecdn.app/1080/768',
+    'https://random.imagecdn.app/768/1080',
+    'https://random.imagecdn.app/1080/768',
+    'https://random.imagecdn.app/768/1080'];
 
 let currentIndex = 0;
 
@@ -32,8 +35,22 @@ function toggleSliderLeft() {
     span.innerHTML = `0${currentIndex + 1}`;
 }
 
+function drawDots() {
+    let content = '';
+    for (let i = 0; i <= arraySlider.length - 1; i++) {
+        content += `          
+        <label>
+        <input id=${i} class="square-slider" type="radio" name="radio" />
+      </label>`;
+    }
+    switcher.innerHTML = content;
+}
+
+drawDots();
+const dotsArray = document.querySelectorAll('.switcher > label > input');
 let currentDotsIndex = 0;
 dotsArray[0].style.backgroundColor = '#9d8665';
+dotsArray[0].checked = true;
 
 function toggleDotsNext() {
     dotsArray[currentDotsIndex].style.backgroundColor = '#ffffff';

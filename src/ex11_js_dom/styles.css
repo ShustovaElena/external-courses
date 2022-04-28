@@ -13,10 +13,10 @@ body {
     width: 80%;
     height: 564px;
     position: relative;
-    background-image: url("assets/img/background-welcome.jpg");
-    background-size: 1000px 750px;
+    background-image: url("https://random.imagecdn.app/768/1080");
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: 50% 0%;
+    background-position: 50% 50%;
     transition: background 0.3s ease-in;
 }
 
@@ -63,15 +63,28 @@ body {
 
 .slider button {
     padding: -2px 5px;
-    border: none;
+    border-bottom: none;
+    border-left: none;
     font: inherit;
     color: inherit;
     background-color: transparent;
     cursor: pointer;
 }
 
-.arrows button img:hover {
-    filter: invert(60%) sepia(5%) saturate(2625%) hue-rotate(356deg) brightness(89%) contrast(78%);
+.arrow {
+    width: 30px;
+    height: 30px;
+    border-top: 5px solid #9d8665;
+    border-right: 5px solid #9d8665;
+    margin-right: 30px;
+}
+
+.left-arrow-slider {
+    transform: rotate(-135deg);
+}
+
+.right-arrow-slider {
+    transform: rotate(45deg);
 }
 
 .counter span {
