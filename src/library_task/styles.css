@@ -1,0 +1,105 @@
+:root {
+    --header: #2e364a;
+    --link: #70778f;
+    --dot: #1b2029;
+    --bg-profile: #15a5fa;
+}
+
+@font-face {
+    font-family: FontAwesome;
+    src: url("assets/fonts/FontAwesome.otf");
+}
+
+@font-face {
+    font-family: Proxima;
+    src: url("assets/fonts/Proxima Nova Regular.otf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    height: 50px;
+    background-color: var(--header);
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.dot {
+    margin-top: 23px;
+    width: 5px;
+    height: 5px;
+    background-color: var(--dot);
+}
+
+.link {
+    margin-top: 15px;
+    text-decoration: none;
+    color: var(--link);
+    font-family: FontAwesome;
+    text-transform: capitalize;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    width: 180px;
+    background-color: var(--bg-profile);
+    color: #ffffff;
+    font-family: Proxima;
+    cursor: pointer;
+}
+
+.user-photo {
+    margin-top: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.arrow-button {
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    padding: 0;
+    border: none;
+    background: url(assets/img/arrow-down.png) 100% 100%/ 100% 100% no-repeat;
+}
+
+main {
+    height: calc(100vh - 100px);
+}
+
+footer {
+    gap: 0;
+}
+
+.questions,
+.settings {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.questions {
+    background: url(assets/img/question.png) 50% 50%/ 50% 50% no-repeat, #1e2737;
+}
+
+.settings {
+    background: url(assets/img/settings.png) 50% 50%/ 50% 50% no-repeat, var(--bg-profile);
+}
