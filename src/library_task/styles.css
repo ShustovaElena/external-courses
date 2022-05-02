@@ -160,7 +160,7 @@ footer {
     filter: brightness(0) invert(0.6);
 }
 
-.menu-link:hover {
+.book-menu .menu-link:hover {
     background-color: var(--bg-profile);
     color: white;
 }
@@ -199,8 +199,13 @@ li:nth-child(4)::marker {
     color: violet;
 }
 
-.category li:hover {
-    background-color: var(--bg-profile);
+ul li:hover::marker {
+    color: white;
+    background-color: transparent;
+}
+
+.category li a:hover {
+    color: white;
 }
 
 .category li {
@@ -316,7 +321,8 @@ input[type="search"] {
     height: 270px;
 }
 
-h2, p {
+h2,
+.card-author p {
     margin: 0;
 }
 
@@ -333,12 +339,12 @@ h2, p {
 }
 
 .card-author {
-    margin-left: 15px;
+    margin: -5px 15px;
 }
 
 .rating-result {
     width: 100px;
-    margin: 0 50px;
+    margin: -5px 50px 0 50px;
 }
 
 .rating-result span {
@@ -358,27 +364,3 @@ h2, p {
     color: gold;
     text-shadow: 1px 1px #c60;
 }
-
-/* @media (max-width: 1440px) {
-    .add {
-        min-height: 50px;
-    }
-
-    .add-button {
-        padding-left: 40px;
-        width: 170px;
-        height: 35px;
-    }
-
-    .book-menu {
-        min-height: 180px;
-    }
-
-    .category {
-        min-height: 140px;
-    }
-
-    .actions {
-        min-height: 200px;
-    }
-} */
