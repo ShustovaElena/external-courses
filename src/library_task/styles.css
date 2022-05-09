@@ -313,12 +313,17 @@ input[type="search"] {
 /* CARDS */
 
 .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
     margin: 30px 20px;
 }
 
 .card-img {
-    width: 200px;
-    height: 270px;
+    width: 195px;
+    height: 260px;
 }
 
 h2,
@@ -363,4 +368,83 @@ h2,
 .rating-result>span.active {
     color: gold;
     text-shadow: 1px 1px #c60;
+}
+
+/* MODAL WINDOW */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-window {
+    position: absolute;
+    z-index: 11;
+    width: 450px;
+    height: 300px;
+    top: 30%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Proxima;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1), inset 0 1px 2px rgba(241, 136, 15, 0.3);
+    background-color: #FFFFFF;
+    color: var(--header);
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 35%;
+    }
+}
+
+.modal-window h2 {
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f17544;
+    font-size: 2rem;
+}
+
+.modal-window button {
+    width: 150px;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f17544;
+    background-color: inherit;
+    border: 2px solid #f17544;
+    cursor: pointer;
+}
+
+.modal-window label {
+    padding: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--header);
+    margin-left: 30px;
+}
+
+.modal-window input[type="text"] {
+    padding: 5px 40px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1), inset 0 1px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    border: 1px solid rgba(7, 104, 99, 0.4);
+    font: 13px Tahoma, Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    outline: none;
 }
