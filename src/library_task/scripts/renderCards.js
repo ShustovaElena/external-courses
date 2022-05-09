@@ -2,7 +2,7 @@ import { data } from '../data.js';
 
 const cardsWrapper = document.querySelector('.cards');
 
-function starGenerate(id, starCount) {
+export function starGenerate(id, starCount) {
     const card = document.getElementById(`card${id}`);
     const cardRate = card.querySelector('.rating-result');
     for (let i = 1; i <= starCount; i++) {
