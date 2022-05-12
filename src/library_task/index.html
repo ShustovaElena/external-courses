@@ -24,10 +24,111 @@
         <span class="arrow-button"></span>
       </div>
     </header>
-    <main></main>
+    <main>
+      <aside class="sidebar">
+        <div class="add">
+          <button class="add-button">Add a book</button>
+        </div>
+
+        <div class="book-menu">
+          <a class="menu-link" href="#"
+            ><img class="menu-img" src="./assets/img/book_3725.png" /> Now
+            reading</a
+          >
+          <a class="menu-link" href="#"
+            ><img class="menu-img" src="./assets/img/browser.png" />Browse</a
+          >
+          <a class="menu-link" href="#"
+            ><img class="menu-img" src="./assets/img/buy.png" />Buy books</a
+          >
+          <a class="menu-link" href="#"
+            ><img class="menu-img" src="./assets/img/star.png" />Favorite
+            books</a
+          >
+          <a class="menu-link" href="#"
+            ><img class="menu-img" src="./assets/img/list.png" />Wishlist</a
+          >
+          <a class="menu-link" href="#"
+            ><img class="menu-img" src="./assets/img/clock.png" />History</a
+          >
+        </div>
+
+        <div class="category">
+          <ul>
+            <li>
+              <a class="menu-link" href="#">Must read titles</a>
+            </li>
+            <li>
+              <a class="menu-link" href="#">Best of list</a>
+            </li>
+            <li>
+              <a class="menu-link" href="#">Classic novels</a>
+            </li>
+            <li>
+              <a class="menu-link" href="#">Non fiction</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="actions">
+          <div class="action-item">
+            <img class="menu-img" src="./assets/img/clock.png" />
+            <div>
+              <a class="action-text" href="#"
+                >You added <b>Fight club</b> by <b>Chuck Palahniuk</b> to your
+                <b>Must Read Titles</b></a
+              >
+              <p>24 minutes ago</p>
+            </div>
+          </div>
+          <div class="action-item">
+            <img class="menu-img" src="./assets/img/clock.png" />
+            <div>
+              <a class="action-text" href="#"
+                >You added <b>The Trial</b> by <b>Franz Kafka</b> to your
+                <b>Must Read Titles</b></a
+              >
+              <p>48 minutes ago</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <article>
+        <section class="section-head">
+          <h1>Browse available books</h1>
+        </section>
+
+        <section class="filters">
+          <div class="filter-buttons">
+            <button class="filter-item">All books</button>
+            <button class="filter-item">Most recent</button>
+            <button class="filter-item most-popular">Most popular</button>
+            <button class="filter-item">Free books</button>
+          </div>
+
+          <form class="search">
+            <input
+              class="search-input"
+              type="text"
+              placeholder="Enter Keywords"
+            />
+          </form>
+        </section>
+
+        <section class="cards"></section>
+      </article>
+    </main>
     <footer>
       <button class="questions"></button>
       <button class="settings"></button>
     </footer>
+
+    <script type="module" src="scripts/addBook.js"></script>
+    <script type="module" src="data.js"></script>
+    <script type="module" src="scripts/renderCards.js"></script>
+    <script type="module" src="scripts/search.js"></script>
+    <script type="module" src="scripts/mostPopular.js"></script>
+    <script type="module" src="scripts/changeRating.js"></script>
   </body>
 </html>
