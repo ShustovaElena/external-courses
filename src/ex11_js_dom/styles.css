@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    background-color: #000000;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: block;
+    margin: 50px auto;
+    width: 80%;
+    height: 564px;
+    position: relative;
+    background-image: url("https://random.imagecdn.app/768/1080");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: background 0.3s ease-in;
+}
+
+/*Slider*/
+
+.slider {
+    position: absolute;
+    left: 250px;
+    top: 510px;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 600px;
+    height: 60px;
+    background-color: #000000;
+}
+
+.slider div {
+    margin-left: 20px;
+}
+
+.slider label input[type=radio] {
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    padding: 0.5em;
+    margin: 10px;
+    -webkit-appearance: none;
+}
+
+.slider label input[type=radio]:checked {
+    background-color: #9d8665;
+    background-size: 9px 9px;
+}
+
+.slider label input[type=radio]:focus {
+    outline-color: transparent;
+}
+
+.slider label input[type=radio]:hover {
+    background-color: #9d8665;
+}
+
+.slider button {
+    padding: -2px 5px;
+    border-bottom: none;
+    border-left: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    border-top: 5px solid #9d8665;
+    border-right: 5px solid #9d8665;
+    margin-right: 30px;
+}
+
+.left-arrow-slider {
+    transform: rotate(-135deg);
+}
+
+.right-arrow-slider {
+    transform: rotate(45deg);
+}
+
+.counter span {
+    font-size: 1.5em;
+    color: #FFFFFF;
+}
